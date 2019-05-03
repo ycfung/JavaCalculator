@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="96.0" prefWidth="226.0">
+               <top>
+                  <Pane prefHeight="7.0" BorderPane.alignment="CENTER" />
+               </top>
+               <bottom>
+                  <Pane prefHeight="7.0" BorderPane.alignment="CENTER" />
+               </bottom>
+               <left>
+                  <Pane prefHeight="79.0" prefWidth="7.0" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <Pane prefWidth="7.0" BorderPane.alignment="CENTER" />
+               </right>
+               <center>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="imageview" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon.png" />
+                           </image>
+                        </ImageView>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <top>
+                              <Pane prefHeight="17.0" prefWidth="156.0" BorderPane.alignment="CENTER" />
+                           </top>
+                           <bottom>
+                              <Pane prefHeight="17.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </bottom>
+                           <center>
+                              <Text fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="Java Calculator" wrappingWidth="134.1766357421875" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <effect>
+                                    <Blend opacity="0.57">
+                                       <topInput>
+                                          <Shadow />
+                                       </topInput>
+                                    </Blend>
+                                 </effect>
+                              </Text>
+                           </center>
+                        </BorderPane>
+                     </children>
+                  </HBox>
+               </center>
+            </BorderPane>
+            <TextArea fx:id="textarea" editable="false" prefHeight="224.0" prefWidth="226.0" text="Product Version&#10;Java Calculator 1.0&#10;&#10;Build Information&#10;Version 1.0&#10;Date: 2019-05-03&#10;&#10;For codes:&#10;https://github.com/ycfung/JavaCalculator&#10;&#10;Copyright © 2019, ycfung." />
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Pane prefHeight="7.0" prefWidth="240.0" BorderPane.alignment="CENTER" />
+   </top>
+   <right>
+      <Pane prefHeight="282.0" prefWidth="7.0" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="7.0" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <Pane prefHeight="7.0" prefWidth="240.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
