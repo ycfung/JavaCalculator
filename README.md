@@ -4,7 +4,7 @@ It'a simple calculator written in Java 11.
 
 ## Screenshot
 
-![](D:\OneDrive\Projects\Java\JavaCalculator\screenshot.png)
+![](screenshot.png)
 
 ## Build
 
